@@ -18,8 +18,6 @@ app.post("/", function(req, res){
   let radCircle = parseFloat(req.body.n1);;
 
 // does the computation of the input variables, as numbers
-    //var areaCircle = Math.PI * Math.pow(radCircle, 2);
-    //var circumCircle = 2 * Math.PI * radCircle;
   let volumeOfSphere = (4/3)*Math.PI*(Math.pow(radCircle,3));
 // sends the results back to the web page as string
   res.send("The Volume of the Sphere is " + volumeOfSphere.toFixed(0));
